@@ -1,0 +1,9 @@
+test --test_output=streamed
+
+build --local_resources=memory=HOST_RAM*.5
+build --local_resources=cpu=HOST_CPUS-2
+build -c dbg --strip=never
+
+# One disk cache shared across worktrees.
+build --disk_cache=~/.cache/bazel-disk-cache
+build --experimental_disk_cache_gc_max_size=50G

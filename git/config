@@ -1,0 +1,9 @@
+# Included from the box's ~/.gitconfig (install.sh adds include.path).
+#
+# The Mac's gh credential helper and its `https insteadOf git@github.com:` rule
+# are left out: the box routes GitHub through its own SSH rewrites or termag's
+# broker, and an extra insteadOf rule would bypass them.
+
+[user]
+	name = Jonny Asmar
+	email = jasmar@launchdarkly.com
